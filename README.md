@@ -64,3 +64,8 @@ server.bind(("0.0.0.0", 12345))
 - Deploy the system on cloud for remote access
 - Add secure authentication (hashed passwords) 
 - Support more advanced ranking algorithms
+
+## Team Members
+- Stuti Garg – Database & Backend (MongoDB, Score Management)
+- Misba Sheikh I – GUI & Quiz Module (Tkinter Interface) 
+- Tanushree P – Client-Server Communication (Socket Programming)   
