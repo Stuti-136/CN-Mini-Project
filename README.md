@@ -25,7 +25,7 @@ This project implements a real-time leaderboard system using a TCP client-server
 Install dependencies:
 pip install pymongo
 
-## How to Run the Project
+## How to Run
 ### 1. Start MongoDB
 Make sure MongoDB is running on your system.
 
@@ -36,6 +36,19 @@ python server.py
 ### 3. Run the Client
 Open another terminal and run:
 python client_gui.py
+
+## Running with Multiple Clients (Different Devices)
+To connect multiple clients from different systems over a network:
+### Server Setup
+- Update binding to allow external connections:
+server.bind(("0.0.0.0", 12345))
+- Run the server on one system
+- Find server IPv4 address using ipconfig (in Windows)
+### Client Setup
+- On other systems update:
+  client.connect(("SERVER_IP_ADDRESS", 12345))
+- Run client_gui on multiple systems
+- All clients will connect to the same server and share the leaderboard
 
 ## How It Works
 1. The server handles multiple clients using threads.
