@@ -28,9 +28,11 @@ pip install pymongo
 ## How to Run the Project
 ### 1. Start MongoDB
 Make sure MongoDB is running on your system.
+
 ### 2. Run the Server
 Open terminal and run:
 python server.py
+
 ### 3. Run the Client
 Open another terminal and run:
 python client_gui.py
